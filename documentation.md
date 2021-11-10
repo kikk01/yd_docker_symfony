@@ -1,10 +1,11 @@
-﻿1. # **Démarrage en fonction de la version**
+﻿# **Démarrage en fonction de la version**
 Docker -v pour avoir la version de docker engine
 
 <https://docs.docker.com/compose/compose-file/compose-file-v3/> permet de savoir comment rédiger le fichier composer.yaml. Voir l’exemple sur cette page
 
 La version 20,10 semble être lié à la version de docker compose 3,9
-1. # **docker-compose.yml**
+
+# **docker-compose.yml**
 Créer un fichier docker-compose.yml
 
 A l’intérieur j’y met les containers (services) ainsi que les images qu’ils vont instancier :
@@ -24,7 +25,8 @@ https://symfony.com/doc/current/setup/web\_server\_configuration.html
 **mettre à jour docker à chaque fois fichier docker-compose.yml est modifier**
 
 docker-compose up -d
-1. # **Création du projet**
+
+# **Création du projet**
 **Créer le projet symfony dans le container docker**
 
 docker exec [container\_name] composer create-project symfony/website-skeleton [project\_name]
@@ -51,13 +53,13 @@ can imagine the container as a server.
 
 Then this command open the shell of the server
 
-1. rentrer dans le répertoire du projet : cd project
+2. rentrer dans le répertoire du projet : cd project
 
 From here I can use all the php/bin console command from symfony
-1. ## **Envoie de mail**
+3. ## **Envoie de mail**
 Création et personnalisation du controleur
 
-**configuration du maikler**
+**configuration du mailer**
 
 dans le .env :
 
